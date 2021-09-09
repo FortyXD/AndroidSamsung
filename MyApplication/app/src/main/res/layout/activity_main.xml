@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <Button
         android:id="@+id/button"
         android:layout_width="221dp"
@@ -17,7 +18,7 @@
         android:layout_marginEnd="114dp"
         android:layout_marginBottom="93dp"
         android:background="#cfcfcf"
-        android:gravity="left|bottom"
+
         android:paddingLeft="5dp"
         android:text="Open"
         android:textColor="@color/black">
@@ -36,7 +37,7 @@
         android:layout_marginStart="127dp"
         android:layout_marginTop="217dp"
         android:layout_marginEnd="108dp"
-        android:text=" OnDay Learn  "
+        android:text="OnDay Learn  "
         android:textSize="40dp" />
 
 
