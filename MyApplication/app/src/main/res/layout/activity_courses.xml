@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.androidcom/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Courses"
-    android:background="@drawable/img">
+    android:background="@drawable/img"
+    android:orientation="vertical">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,20 +16,91 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
 
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="30dp"
 
 
         android:background="@drawable/button"
         android:gravity="right|top"
-        android:paddingLeft="10dp"
-        android:paddingBottom="10dp"
-        android:text="1: prefix"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:text="B2 level test"
         android:textColor="@color/white">
 
 
-    </Button>
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+
+
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="27dp"
+        android:background="@drawable/button"
+        android:gravity="right|top"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:text="Vocabular test"
+        android:textColor="@color/white">
+
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="26dp"
+
+        android:background="@drawable/button"
+        android:gravity="right|top"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:text="Advanced level test "
+
+        android:textColor="@color/white">
+
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="27dp"
+        android:background="@drawable/button"
+        android:gravity="right|top"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:text="Vocabular Advanced level test"
+        android:textColor="@color/white">
+
+
+    </androidx.appcompat.widget.AppCompatButton>
 
     <TextView
         android:id="@+id/textView2"
@@ -45,15 +117,7 @@
         android:gravity="center_horizontal|center_vertical"
         />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="3dp"
-        android:text="AR (Beta)" />
+
 
 
 </RelativeLayout>

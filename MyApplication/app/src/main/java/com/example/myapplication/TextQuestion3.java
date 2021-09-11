@@ -1,7 +1,6 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-import java.util.*;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -10,8 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Random;
 
-public class Test extends AppCompatActivity {
+public class TextQuestion3 extends AppCompatActivity {
 
     public static final String SHARED = "dasd";
     public static final String Text = "text";
@@ -42,7 +43,7 @@ public class Test extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test1);
+        setContentView(R.layout.activity_text_question3);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         TextView =(TextView) findViewById(R.id.TextQuestion);
@@ -90,51 +91,57 @@ public class Test extends AppCompatActivity {
         });
 
 
-    next.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            button1.setVisibility(View.VISIBLE);
-            button2.setVisibility(View.VISIBLE);
-            button3.setVisibility(View.VISIBLE);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                button1.setVisibility(View.VISIBLE);
+                button2.setVisibility(View.VISIBLE);
+                button3.setVisibility(View.VISIBLE);
 
-            next.setVisibility(View.GONE);
-            if (a.size() == 0){
-              Proces = Correct/All;
+                next.setVisibility(View.GONE);
+                if (a.size() == 0){
+                    Proces = Correct/All;
 
-                openCourses();
+                    openCourses();
+                }
+                else {
+                    ChangeQuestion(a);
+                }
+                Proces = Correct/All*100;
+
+
             }
-            else {
-                ChangeQuestion(a);
+        });
+        Restart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SetRestart();
             }
-        Proces = Correct/All*100;
-
-
-        }
-    });
-    Restart.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-           SetRestart();
-        }
-    });
-    Go_To_Courses.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            SetCourses();
-        }
-    });
+        });
+        Go_To_Courses.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SetCourses();
+            }
+        });
     }
 
     private void listmarks() {
-        a.add(new QuestionClass("I usually get up at 6 a.m. but not___" , "never" , "always", "often","always"));
-        a.add(new QuestionClass("I don’t___have money with me." , "some" , "any", "a","any"));
-        a.add(new QuestionClass("My school is___than my sister’s." , "big " , "bigger", "more big","bigger "));
-        a.add(new QuestionClass("Ten-year-old students___to university." , "go" , "don’t go", "doesn’t go","don’t go"));
-        a.add(new QuestionClass("Where___to school?" , "your brother goes" , "does your brother go", "goes your brother","does your brother go"));
-        a.add(new QuestionClass("Alejandro can___English very well." , "speak" , "to speak", "speaking","speak"));
-        a.add(new QuestionClass("Sarah sings beautifully - I think she___a famous singer when she’s older." , "will be" , "will being ", "will","will be"));
-        a.add(new QuestionClass("Katy___her mum in the kitchen now." , "‘s help" , "is helping", "helps","is helping"));
-        a.add(new QuestionClass("Tom___late for school every day last week." , "is" , "were", "was","was"));
+        a.add(new QuestionClass("Why___to England next month?" , "does John go" , "will John go", "is John going","is John going"));
+        a.add(new QuestionClass("I___Star Wars." , "have never seen" , "didn’t ever see", "never seen","have never seen"));
+        a.add(new QuestionClass("___your keys?" , "Have you found" , "Have you find", "You have find","Have you found"));
+        a.add(new QuestionClass("The TV show___an hour ago." , "it ended" , "has ended", "ended","ended"));
+        a.add(new QuestionClass("You___eat a lot of sweets - they’re not good for you." , "couldn’t" , "shouldn’t", "wouldn’t","shouldn’t"));
+        a.add(new QuestionClass("Tom___his homework yet" , "has finished" , "are still finishing", "hasn’t finished","hasn’t finished"));
+        a.add(new QuestionClass("You___use the lift when there is a fire alarm" , "don’t have to" , "mustn’t", "haven’t to","mustn’t"));
+        a.add(new QuestionClass("Dan hasn’t spoken to me___he got home." , "for" , "yet", "since","since"));
+        a.add(new QuestionClass("This is the most interesting book I___" , "‘ve ever read" , "ever have read", "‘ve never read","‘ve ever read"));
+        a.add(new QuestionClass("My brother___hasn’t learnt to ride a bike." , "already" , "still", "yet","still"));
+        a.add(new QuestionClass("If I knew the answer, I___you." , "would tell" , "will tell", "will to tell","would tell"));
+        a.add(new QuestionClass("If you___me, what would you do in this situation?" , "were" , "would be", "will be","were"));
+        a.add(new QuestionClass("This building___very well, I think." , "designed" , "designs", "is designed","is designed"));
+        a.add(new QuestionClass("My sister’s___having problems with her computer" , "a few" , "much", "a little","a few"));
+        a.add(new QuestionClass("Milly and Richard___probably be tired after their long journey." , "may" , "will", "might","will"));
         All= a.size();
 
 
@@ -200,7 +207,7 @@ public class Test extends AppCompatActivity {
         else {
             Uncorrected();}
     }
-    public void ChangeQuestion(ArrayList <QuestionClass> a){
+    public void ChangeQuestion(ArrayList<QuestionClass> a){
         int Number = rand.nextInt(a.size());
         TextQuestion = a.get(Number).Question;
         TextVariant1 = a.get(Number).Variant1;
@@ -222,27 +229,4 @@ public class Test extends AppCompatActivity {
 
 }
 
-class QuestionClass{
-    String Question;
-    String Variant1;
-    String Variant2;
-    String Variant3;
 
-    String Answer;
-    public  QuestionClass(String Question,
-            String Variant1,
-            String Variant2,
-            String Variant3,
-
-            String Answer){
-        this.Question = Question;
-        this.Variant1 = Variant1;
-        this.Variant2 = Variant2;
-        this.Variant3 = Variant3;
-
-        this.Answer = Answer;
-
-
-    }
-
-}
