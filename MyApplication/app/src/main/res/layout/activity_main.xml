@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/imgbgrtest">
 
 
     <Button
@@ -14,10 +15,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="76dp"
-        android:layout_marginEnd="114dp"
-        android:layout_marginBottom="93dp"
-        android:background="#cfcfcf"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp"
+        android:background="#B82D2D"
 
         android:paddingLeft="5dp"
         android:text="Open"
@@ -33,11 +34,12 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="127dp"
+        android:layout_marginStart="80dp"
         android:layout_marginTop="217dp"
-        android:layout_marginEnd="108dp"
+        android:layout_marginEnd="80dp"
         android:text="OnDay Learn  "
+        android:textColor="@color/black"
+        android:gravity="center_horizontal|center_vertical"
         android:textSize="40dp" />
 
 

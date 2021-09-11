@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/GitHub_Projects/AndroidSumsung/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.36875" />
+        <entry key="..\:/GitHub_Projects/AndroidSumsung/MyApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3848958333333333" />
+        <entry key="..\:/GitHub_Projects/AndroidSumsung/MyApplication/app/src/main/res/drawable/button.xml" value="0.3848958333333333" />
+        <entry key="..\:/GitHub_Projects/AndroidSumsung/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3848958333333333" />
+        <entry key="..\:/GitHub_Projects/AndroidSumsung/MyApplication/app/src/main/res/layout/activity_courses.xml" value="0.33" />
+        <entry key="..\:/GitHub_Projects/AndroidSumsung/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/GitHub_Projects/AndroidSumsung/MyApplication/app/src/main/res/layout/activity_test.xml" value="0.33" />
+        <entry key="..\:/GitHub_Projects/AndroidSumsung/MyApplication/app/src/main/res/layout/activity_test_login.xml" value="0.215625" />
+        <entry key="..\:/GitHub_Projects/AndroidSumsung/MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3848958333333333" />
+        <entry key="..\:/GitHub_Projects/AndroidSumsung/MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3848958333333333" />
         <entry key="..\:/MyApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.35462962962962963" />
         <entry key="..\:/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.35462962962962963" />
         <entry key="..\:/MyApplication/app/src/main/res/layout/activity_courses.xml" value="0.17933130699088146" />
