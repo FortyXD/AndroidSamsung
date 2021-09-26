@@ -47,7 +47,6 @@ public void openActivity2(){
             Intent intent = new Intent(this, SignInGoogle.class);
             startActivity(intent);
 
-
 }
 
 }

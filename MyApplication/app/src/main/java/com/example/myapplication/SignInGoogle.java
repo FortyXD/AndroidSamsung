@@ -3,13 +3,14 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -37,23 +38,29 @@ public class SignInGoogle extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
 
-
+    Button button1;
     private GoogleSignInClient mGoogleSignInClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        setContentView(R.layout.activity_test_sign);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("497255874834-la7vjssr2s0r5rovhto6i29n8kjh6284.apps.googleusercontent.com")
+                    .requestIdToken("892713642601-s13kai2uovrs4a4vqjnqarrbjp60fj6i.apps.googleusercontent.com")
                 .requestEmail()
                 .build();
 
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
         mAuth = FirebaseAuth.getInstance();
-
+        button1 =(Button) findViewById(R.id.button7);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signIn();
+            }
+        });
     }
 
 
@@ -89,7 +96,6 @@ public class SignInGoogle extends AppCompatActivity {
                 Context context = getApplicationContext();
 
                 int duration = Toast.LENGTH_SHORT;
-
 
             }
         }
