@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "660904100728",
+    "project_id": "sumsung-16192",
+    "storage_bucket": "sumsung-16192.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660904100728:android:16c91bd7372cf96509be8d",
+        "android_client_info": {
+          "package_name": "com.example.sumsung"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660904100728-lcdel6auqqn3dd8fs423d4fn3obsb0bt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sumsung",
+            "certificate_hash": "a94840d2e1d1d67eee056e6664e2653f4aa28449"
+          }
+        },
+        {
+          "client_id": "660904100728-oc1toe0iskh9a53p6c88qe22gm4hl199.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYtmxgHidSRo6pk3jQqJR49leXo4K0xSo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660904100728-oc1toe0iskh9a53p6c88qe22gm4hl199.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
